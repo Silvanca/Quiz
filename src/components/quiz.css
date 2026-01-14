@@ -1,0 +1,93 @@
+body {
+    background: #f3f3f3;
+    font-family: Arial, sans-serif;
+}
+
+.quiz-wrapper {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 10px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+h1, h2 {
+    margin: 0;
+    text-align: center;
+}
+
+input, select {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.btn-primary {
+    padding: 12px;
+    background: #4285f4;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.2s;
+}
+
+.btn-primary:hover {
+    background: #2f6cd5;
+}
+
+.question {
+    font-weight: bold;
+}
+
+.answers {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.answer {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.answer:hover {
+    background: #eef3ff;
+}
+
+.answer.selected {
+    background: #dce7ff;
+    border-color: #4285f4;
+}
+
+.result {
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.correct {
+    background: #d4ffd6;
+    border-left: 6px solid #3ba832;
+}
+
+.wrong {
+    background: #ffd4d4;
+    border-left: 6px solid #d23131;
+}
